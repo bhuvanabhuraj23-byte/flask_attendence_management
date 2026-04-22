@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>about</h1
-    <p>this is the about page.</p>
-</body>
-</html>
+{% extends 'Base.html' %}
+
+{% block body %}
+
+<section class="about-section">
+    <h1>About Attendance Management System</h1>
+    <p>Our Attendance Management System is a comprehensive solution designed to help organizations efficiently track and manage attendance. Whether you're a school, business, or club, our platform provides the tools you need to streamline attendance processes and generate insightful reports.</p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>Easy Attendance Tracking:</strong> Mark and view attendance with just a few clicks. Our user-friendly interface ensures that you can quickly manage attendance for any event or session.</li>
+        <li><strong>Comprehensive Reports:</strong> Generate detailed attendance reports for students, employees, or members. Analyze trends and make informed decisions based on accurate data.</li>
+        <li><strong>Secure & Private:</strong> Your data is protected with industry-standard security measures. We prioritize your privacy and ensure that your information is safe at all times.</li>
+    </ul>
+
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide an efficient and reliable attendance management solution that simplifies the process of tracking attendance while offering valuable insights through comprehensive reporting. We are committed to helping organizations of all sizes improve their attendance management practices.</p>    
+</section>
+{% endblock %}
