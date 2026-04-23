@@ -4,13 +4,14 @@
 {% block body %}
 <div class="home-hero">
     <div class="hero-content">
-        <h1>Welcome to Attendance Management System</h1>
+        <h1>Welcome {{user.name if user else "" }} to Attendance Management System</h1>
         <p class="subtitle">Effortlessly track, manage, and analyze attendance for your organization.</p>
         <a href="/signup" class="cta-btn">Get Started</a>
     </div>
 </div>
 
 <section class="features-section">
+
     <h2>Features</h2>
     <div class="features-grid">
         <div class="feature-card">
@@ -32,4 +33,5 @@
     <h2>Why Choose Us?</h2>
     <p>Our Attendance Management System is designed for simplicity and efficiency. Whether you manage a school, business, or club, our platform adapts to your needs and grows with you.</p>
 </section>
+
 {% endblock %}
